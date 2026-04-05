@@ -8,6 +8,22 @@ Amazon's Working Backwards methodology starts with a press release. Not a PRD, n
 
 This skill automates that process with Claude. You describe your product idea, and Claude interviews you, writes the press release following Amazon's proven structure, and outputs a professionally formatted `.docx` file ready for stakeholder review.
 
+### How It Compares
+
+| Assertion | With Skill | Without Skill |
+| :--- | :---: | :---: |
+| **flowing-narrative** | ✓ ✓ ✓ | ✗ ✗ ✗ |
+| **vivid-problem** | ✓ ✓ ✓ | ✗ ✗ ✗ |
+| **spokesperson-vision** | ✓ ✓ ✓ | ✓ ✓ ✗ |
+| **customer-behavior-change** | ✓ ✓ ✓ | ✗ ✗ ✗ |
+| **no-bullet-lists** | ✓ ✓ ✓ | ✗ ✗ ✗ |
+| **concrete-numbers** | ✓ ✓ ✓ | ✓ ✓ ✓ |
+| **no-jargon** | ✓ ✓ ✓ | ✓ ✓ ✓ |
+| **docx-produced** | ✓ ✓ ✓ | ✓ ✓ ✓ |
+
+> **[View Evaluation Outputs](./evals/outputs)**
+> *Check the directory above to see the side-by-side comparison between raw LLM outputs and the structured results produced by this skill.*
+
 ## What It Does
 
 1. **Interviews you** — Asks targeted questions about your customer, their problem, your solution, and what makes it different
