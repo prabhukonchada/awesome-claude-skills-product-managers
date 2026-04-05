@@ -26,7 +26,7 @@
         {"text": "no-bullet-lists", "passed": true, "evidence": "All content in narrative paragraphs"},
         {"text": "concrete-numbers", "passed": true, "evidence": "Five minutes, two minutes, fifteen minutes at breakfast"},
         {"text": "no-jargon", "passed": true, "evidence": "Accessible language throughout"},
-        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+        {"text": "md-produced", "passed": true, "evidence": "Valid .md file generated"}
       ]
     },
     {
@@ -46,7 +46,7 @@
         {"text": "no-bullet-lists", "passed": false, "evidence": "Key Features section is a bullet list"},
         {"text": "concrete-numbers", "passed": true, "evidence": "Mentions real-time progress and some feature details"},
         {"text": "no-jargon", "passed": true, "evidence": "Mostly accessible language"},
-        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+        {"text": "md-produced", "passed": true, "evidence": "Valid .md file generated"}
       ]
     },
     {
@@ -66,7 +66,7 @@
         {"text": "no-bullet-lists", "passed": true, "evidence": "All content in prose paragraphs"},
         {"text": "concrete-numbers", "passed": true, "evidence": "Five minutes prominently featured throughout"},
         {"text": "no-jargon", "passed": true, "evidence": "JSDoc and OpenAPI mentioned but in context — accessible to broader audience"},
-        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+        {"text": "md-produced", "passed": true, "evidence": "Valid .md file generated"}
       ]
     },
     {
@@ -86,7 +86,7 @@
         {"text": "no-bullet-lists", "passed": false, "evidence": "Multiple bullet lists for features and customer impact metrics"},
         {"text": "concrete-numbers", "passed": true, "evidence": "Five minutes, 85% reduction, 30% decrease, 15-20 hours"},
         {"text": "no-jargon", "passed": true, "evidence": "Accessible overall"},
-        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+        {"text": "md-produced", "passed": true, "evidence": "Valid .md file generated"}
       ]
     },
     {
@@ -106,7 +106,7 @@
         {"text": "no-bullet-lists", "passed": true, "evidence": "All content in narrative form"},
         {"text": "concrete-numbers", "passed": true, "evidence": "$49, 30 vs 60 ounces, 2 PM, eight-ounce servings"},
         {"text": "no-jargon", "passed": true, "evidence": "Completely accessible to general audience"},
-        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+        {"text": "md-produced", "passed": true, "evidence": "Valid .md file generated"}
       ]
     },
     {
@@ -126,7 +126,7 @@
         {"text": "no-bullet-lists", "passed": false, "evidence": "Feature list with 6 bullet points"},
         {"text": "concrete-numbers", "passed": true, "evidence": "$49, 7-day battery, 1% tolerance"},
         {"text": "no-jargon", "passed": true, "evidence": "Some light jargon (BPA-free, Bluetooth) but mostly accessible"},
-        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+        {"text": "md-produced", "passed": true, "evidence": "Valid .md file generated"}
       ]
     }
   ],
