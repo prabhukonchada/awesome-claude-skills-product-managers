@@ -1,0 +1,23 @@
+{
+  "skill_name": "amazon-pr",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to write an Amazon-style press release for a new feature we're building at my startup. We're an AI tutoring company for K-12 students. The feature is a parent dashboard that shows real-time progress of their kid's learning sessions — what topics they covered, where they struggled, and suggested practice areas. Right now parents have no visibility into what happens during tutoring sessions and just have to trust that it's working. Our CEO is Maya Chen.",
+      "expected_output": "A .docx press release following the Working Backwards format, with vivid problem statement about parent anxiety/lack of visibility, clear solution description, CEO quote with vision, and a customer quote showing behavior change (e.g., parent who used to quiz their kid after sessions now checks the dashboard instead).",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "help me write a working backwards PR for an internal developer tool. we're building a service that auto-generates API documentation from code comments and type definitions. right now our engineers waste hours keeping docs in sync with code and they're always out of date. customers complain they can't trust our docs. the tool scans the codebase on every merge to main and publishes updated docs within 5 minutes. CTO is Raj Patel, company is called DevFlow.",
+      "expected_output": "A .docx press release with a strong problem paragraph about doc-code drift and customer trust erosion, specific '5 minutes' metric featured prominently, CTO quote about developer experience philosophy, and a customer quote from an engineer describing the before/after of doc maintenance.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I have a product idea — it's a physical smart water bottle that tracks hydration and syncs with health apps. It uses a sensor in the cap to measure how much water you drink throughout the day and nudges you with gentle LED reminders when you're behind. Target audience is health-conscious professionals aged 25-45 who know they should drink more water but forget during busy workdays. We'd price it at $49. Company name is HydraSync, I'm the founder (Alex Torres).",
+      "expected_output": "A .docx press release for a consumer hardware product, with a relatable problem paragraph about dehydration during busy workdays, clear product description emphasizing simplicity (LED nudges, app sync), founder quote with health/wellness vision, customer quote showing daily routine change, and $49 price point in the call to action.",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "metadata": {
+    "skill_name": "amazon-pr",
+    "skill_path": "/tmp/amazon-pr",
+    "executor_model": "claude-opus-4-6",
+    "analyzer_model": "claude-opus-4-6",
+    "timestamp": "2026-04-05T06:25:00Z",
+    "evals_run": ["ai-tutoring-dashboard", "api-doc-generator", "smart-water-bottle"],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_name": "ai-tutoring-dashboard",
+      "configuration": "with_skill",
+      "pass_rate": 1.0,
+      "passed": 8,
+      "failed": 0,
+      "total": 8,
+      "time_seconds": 61.4,
+      "tokens": 94541,
+      "expectations": [
+        {"text": "flowing-narrative", "passed": true, "evidence": "No section headers, reads as continuous story"},
+        {"text": "vivid-problem", "passed": true, "evidence": "Black box metaphor, parents blind to learning process, specific scenarios"},
+        {"text": "spokesperson-vision", "passed": true, "evidence": "Maya Chen quote about trust, transparency, and partnership"},
+        {"text": "customer-behavior-change", "passed": true, "evidence": "Before: 'had no idea what my daughter was learning', After: 'can see she's working on multiplying fractions'"},
+        {"text": "no-bullet-lists", "passed": true, "evidence": "All content in narrative paragraphs"},
+        {"text": "concrete-numbers", "passed": true, "evidence": "Five minutes, two minutes, fifteen minutes at breakfast"},
+        {"text": "no-jargon", "passed": true, "evidence": "Accessible language throughout"},
+        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+      ]
+    },
+    {
+      "eval_name": "ai-tutoring-dashboard",
+      "configuration": "without_skill",
+      "pass_rate": 0.375,
+      "passed": 3,
+      "failed": 5,
+      "total": 8,
+      "time_seconds": 35.9,
+      "tokens": 90586,
+      "expectations": [
+        {"text": "flowing-narrative", "passed": false, "evidence": "Uses 'FOR IMMEDIATE RELEASE', 'Why This Matters', 'Key Features' section headers"},
+        {"text": "vivid-problem", "passed": false, "evidence": "Generic: 'Parents invest in tutoring because they care deeply' — lacks specific scenarios"},
+        {"text": "spokesperson-vision", "passed": true, "evidence": "Maya Chen quote touches on trust-to-partnership theme"},
+        {"text": "customer-behavior-change", "passed": false, "evidence": "No customer quote with before/after behavior change"},
+        {"text": "no-bullet-lists", "passed": false, "evidence": "Key Features section is a bullet list"},
+        {"text": "concrete-numbers", "passed": true, "evidence": "Mentions real-time progress and some feature details"},
+        {"text": "no-jargon", "passed": true, "evidence": "Mostly accessible language"},
+        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+      ]
+    },
+    {
+      "eval_name": "api-doc-generator",
+      "configuration": "with_skill",
+      "pass_rate": 1.0,
+      "passed": 8,
+      "failed": 0,
+      "total": 8,
+      "time_seconds": 155.5,
+      "tokens": 104986,
+      "expectations": [
+        {"text": "flowing-narrative", "passed": true, "evidence": "Continuous narrative, no visible section headers"},
+        {"text": "vivid-problem", "passed": true, "evidence": "Specific scenario: engineer changes endpoint, docs break, customers debug phantom endpoints"},
+        {"text": "spokesperson-vision", "passed": true, "evidence": "Raj Patel quote about docs being foundational to developer experience"},
+        {"text": "customer-behavior-change", "passed": true, "evidence": "Before: 'spend every Friday afternoon updating docs wiki', After: 'docs update automatically, support tickets dropped 20%'"},
+        {"text": "no-bullet-lists", "passed": true, "evidence": "All content in prose paragraphs"},
+        {"text": "concrete-numbers", "passed": true, "evidence": "Five minutes prominently featured throughout"},
+        {"text": "no-jargon", "passed": true, "evidence": "JSDoc and OpenAPI mentioned but in context — accessible to broader audience"},
+        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+      ]
+    },
+    {
+      "eval_name": "api-doc-generator",
+      "configuration": "without_skill",
+      "pass_rate": 0.375,
+      "passed": 3,
+      "failed": 5,
+      "total": 8,
+      "time_seconds": 69.7,
+      "tokens": 95689,
+      "expectations": [
+        {"text": "flowing-narrative", "passed": false, "evidence": "Section headers: 'The Problem: Documentation Drift', 'The Solution: Continuous Documentation', etc."},
+        {"text": "vivid-problem", "passed": false, "evidence": "More abstract: 'API documentation falls out of sync' — lacks vivid day-in-the-life scenario"},
+        {"text": "spokesperson-vision", "passed": true, "evidence": "Raj Patel quote touches on freeing engineers from docs"},
+        {"text": "customer-behavior-change", "passed": false, "evidence": "No first-person customer quote; uses aggregate stats instead (85% reduction)"},
+        {"text": "no-bullet-lists", "passed": false, "evidence": "Multiple bullet lists for features and customer impact metrics"},
+        {"text": "concrete-numbers", "passed": true, "evidence": "Five minutes, 85% reduction, 30% decrease, 15-20 hours"},
+        {"text": "no-jargon", "passed": true, "evidence": "Accessible overall"},
+        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+      ]
+    },
+    {
+      "eval_name": "smart-water-bottle",
+      "configuration": "with_skill",
+      "pass_rate": 1.0,
+      "passed": 8,
+      "failed": 0,
+      "total": 8,
+      "time_seconds": 48.4,
+      "tokens": 93674,
+      "expectations": [
+        {"text": "flowing-narrative", "passed": true, "evidence": "No section headers, reads as continuous story"},
+        {"text": "vivid-problem", "passed": true, "evidence": "'Average knowledge worker loses focus... intend to drink 64 ounces but actually consume 30'"},
+        {"text": "spokesperson-vision", "passed": true, "evidence": "Alex Torres quote about simplicity as the product"},
+        {"text": "customer-behavior-change", "passed": true, "evidence": "Before: 'hit 2 PM and barely touched my water bottle', After: 'consistently hitting 60 ounces'"},
+        {"text": "no-bullet-lists", "passed": true, "evidence": "All content in narrative form"},
+        {"text": "concrete-numbers", "passed": true, "evidence": "$49, 30 vs 60 ounces, 2 PM, eight-ounce servings"},
+        {"text": "no-jargon", "passed": true, "evidence": "Completely accessible to general audience"},
+        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+      ]
+    },
+    {
+      "eval_name": "smart-water-bottle",
+      "configuration": "without_skill",
+      "pass_rate": 0.375,
+      "passed": 3,
+      "failed": 5,
+      "total": 8,
+      "time_seconds": 41.5,
+      "tokens": 90693,
+      "expectations": [
+        {"text": "flowing-narrative", "passed": false, "evidence": "'FOR IMMEDIATE RELEASE' header, FAQ section, structured like a PR agency template"},
+        {"text": "vivid-problem", "passed": false, "evidence": "Problem embedded in founder quote, not a standalone vivid paragraph"},
+        {"text": "spokesperson-vision", "passed": false, "evidence": "Both Alex Torres quotes focus on features and product description rather than vision"},
+        {"text": "customer-behavior-change", "passed": false, "evidence": "No customer quote at all — only founder quotes"},
+        {"text": "no-bullet-lists", "passed": false, "evidence": "Feature list with 6 bullet points"},
+        {"text": "concrete-numbers", "passed": true, "evidence": "$49, 7-day battery, 1% tolerance"},
+        {"text": "no-jargon", "passed": true, "evidence": "Some light jargon (BPA-free, Bluetooth) but mostly accessible"},
+        {"text": "docx-produced", "passed": true, "evidence": "Valid .docx file generated"}
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "mean_pass_rate": 1.0,
+      "stddev_pass_rate": 0.0,
+      "mean_time_seconds": 88.4,
+      "mean_tokens": 97734
+    },
+    "without_skill": {
+      "mean_pass_rate": 0.375,
+      "stddev_pass_rate": 0.0,
+      "mean_time_seconds": 49.0,
+      "mean_tokens": 92323
+    },
+    "delta": {
+      "pass_rate": "+0.625",
+      "time_seconds": "+39.4",
+      "tokens": "+5411"
+    }
+  },
+  "notes": [
+    "With-skill outputs achieved 100% pass rate across all assertions vs 37.5% without skill",
+    "The skill's biggest impact: flowing narrative (no section headers), vivid problem statements, and customer behavior-change quotes — all three consistently absent without the skill",
+    "Without-skill outputs default to a PR-agency template (FOR IMMEDIATE RELEASE, bullet lists, FAQ sections) rather than Amazon's narrative style",
+    "Trade-off: with-skill runs take ~80% longer on average (88s vs 49s) and use ~6% more tokens, which is acceptable given the quality improvement"
+  ]
+}
