@@ -1,0 +1,10 @@
+# Local run artifacts
+*.log
+.DS_Store
+.venv/
+__pycache__/
+
+# Never commit pulled inbox content — triage outputs may contain real email bodies
+runs/
+cache/
+*.private.md
