@@ -14,6 +14,7 @@ Claude skills are reusable prompt templates that teach Claude how to perform spe
 |---|---|---|
 | [**amazon-style-pr**](./skills/amazon-style-pr/) | Write Amazon-style Working Backwards press releases as polished Word documents | "PR/FAQ", "working backwards", "press release", "I have a product idea" |
 | [**inbox-autopilot**](./skills/inbox-autopilot/) | Puts your inbox on autopilot — reviews recent mail, prioritizes what needs a reply, and drafts responses in your voice. You approve every send. | "catch me up on email", "what needs a reply", "go through my inbox", "draft replies to the urgent stuff" |
+| [**social-signal-research**](./skills/social-signal-research/) | Turn public social posts into product discovery evidence with source links, caveats, and follow-up decisions | "research social feedback", "analyze X/Twitter reactions", "summarize market pain signals" |
 
 > More skills coming soon: PRD Writer, Experiment Framework, Competitor Analysis, User Interview Synthesizer
 
